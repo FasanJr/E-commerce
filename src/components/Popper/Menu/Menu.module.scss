@@ -1,17 +1,22 @@
 //Menu wrapper
 .menu-list{
-    width: 200px;
+    width: 180px;
     .menu-item{
-        margin-left: 0;
+        width: 100%;
+        margin-left: 0 !important;
+        font-size: 12px;    
+        justify-content: unset;
+        color: #333;
+        text-decoration: none;
     }
+
+    // .menu-item:not(:first-child){
+    //     ml0
+    // }
 }
 
 .menu-popper{
     padding-bottom: 8px;
-}
-
-.menu-body{
-    overflow-y: auto;
 }
 
 //Menu item
@@ -20,10 +25,10 @@
     justify-content: flex-start;
     border-radius: 0;
     padding: 11px 16px;
+
     line-height: 1.8rem;
     font-weight: 600;
-    color: var(--text-color);
-    background-color: var(--white-color);
+
 
     &.separate{
         border-top: 1px solid rgba(22, 24, 35, 0.12);

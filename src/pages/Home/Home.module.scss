@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
+.container {
+    padding: 0;
+}
+
 .navbar{
     padding: 8px 16px;
     background-color: #f92e2c;
@@ -33,6 +37,13 @@
             border: 2px solid #f92e2c;
         }
     }
+
+    &.admin{
+        &:hover{
+            transform: unset;
+            transition: unset;
+        }
+    }
 }
 
 #search-form{
@@ -56,4 +67,38 @@
             box-shadow: unset;
         }
     }
+}
+
+#search-form{
+    &.admin{
+        input{
+            &::placeholder{
+                color: #f92e2c;
+            }
+        }
+    }
+}
+
+.add-btn{
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.delete-btn,
+.edit-btn{
+    min-width: 120px;
+}
+
+.price-text,
+.name-text{
+    color: #333;
+}
+
+.category-text{
+    color: #f92e2c;
+    font-weight: 500;
+}
+
+.name-text{
+    font-weight: 500;
 }

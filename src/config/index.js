@@ -1,7 +1,9 @@
 import routes from './routes'
+import roles from './roles'
 
 const config = {
-    routes
+    routes,
+    roles
 }
 
 export default config

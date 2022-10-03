@@ -9,14 +9,15 @@ const cx = classNames.bind(styles)
 
 function SliderLayout({ children }) {
     return (
-        <div className={cx('wrapper')}>
-            <Header />
-            <Slider />
-            <div className={cx('container')}>
-                {children}
+            <div className={cx('wrapper')}>
+                <Header />
+                <Slider />
+                <div className={cx('container')}>
+                    {children}
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>);
+    );
 }
 
 export default SliderLayout;
